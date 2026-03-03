@@ -79,10 +79,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q                &kp W            &kp F            &kp P                   &kp B      &kp C_MUTE  &kp C_PP  &kp J    &kp L                    &kp U             &kp Y             &kp SQT   &kp BSPC
-&kp LCTRL  &HML LEFT_CONTROL A  &HML LEFT_ALT R  &HML LEFT_GUI S  &HMShiftL LEFT_SHIFT T  &kp G      &kp LALT    &kp RALT  &kp M    &HMShiftR RIGHT_SHIFT N  &HMR RIGHT_GUI E  &HMR RIGHT_ALT I  &kp O     &kp SQT
-&kp LSHFT  &kp Z                &kp X            &kp C            &kp D                   &kp V                            &kp K    &kp H                    &kp COMMA         &kp DOT           &kp FSLH  &kp ESC
-                                                 &kp LGUI         &mo 1                   &kp SPACE                        &kp RET  &mo 2                    &kp RALT
+&kp TAB    &kp Q                &kp W            &kp F            &kp P                   &kp B    &kp C_MUTE  &kp C_PP  &kp J    &kp L                    &kp U             &kp Y             &kp SQT   &kp BSPC
+&kp LCTRL  &HML LEFT_CONTROL A  &HML LEFT_ALT R  &HML LEFT_GUI S  &HMShiftL LEFT_SHIFT T  &kp G    &kp LALT    &kp RALT  &kp M    &HMShiftR RIGHT_SHIFT N  &HMR RIGHT_GUI E  &HMR RIGHT_ALT I  &kp O     &kp SQT
+&kp LSHFT  &kp Z                &kp X            &kp C            &kp D                   &kp V                          &kp K    &kp H                    &kp COMMA         &kp DOT           &kp FSLH  &kp ESC
+                                                 &kp ESCAPE       &lt 1 SPACE             &kp TAB                        &kp RET  &lt 2 BACKSPACE          &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
