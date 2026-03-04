@@ -66,6 +66,18 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        ret {
+            bindings = <&kp RETURN>;
+            key-positions = <18 17 16>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -79,10 +91,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q                &kp W            &kp F            &kp P                   &kp B    &kp C_MUTE  &kp C_PP  &kp J    &kp L                    &kp U             &kp Y             &kp SQT   &kp BSPC
-&kp LCTRL  &HML LEFT_CONTROL A  &HML LEFT_ALT R  &HML LEFT_GUI S  &HMShiftL LEFT_SHIFT T  &kp G    &kp LALT    &kp RALT  &kp M    &HMShiftR RIGHT_SHIFT N  &HMR RIGHT_GUI E  &HMR RIGHT_ALT I  &kp O     &kp SQT
-&kp LSHFT  &kp Z                &kp X            &kp C            &kp D                   &kp V                          &kp K    &kp H                    &kp COMMA         &kp DOT           &kp FSLH  &kp ESC
-                                                 &kp ESCAPE       &lt 1 SPACE             &kp TAB                        &kp RET  &lt 2 BACKSPACE          &kp DEL
+&kp TAB         &kp B                &kp F            &kp L            &kp K                   &kp Q  &kp C_MUTE  &kp C_PP  &kp P    &kp G                    &kp O             &kp U             &kp PERIOD  &kp BSPC
+&sk LEFT_SHIFT  &HML LEFT_CONTROL N  &HML LEFT_ALT S  &HML LEFT_GUI H  &HMShiftL LEFT_SHIFT T  &kp M  &kp LALT    &kp RALT  &kp Y    &HMShiftR RIGHT_SHIFT C  &HMR RIGHT_GUI A  &HMR RIGHT_ALT E  &kp I       &sk RIGHT_SHIFT
+&kp LSHFT       &kp X                &kp V            &kp J            &kp D                   &kp Z                        &kp SQT  &kp W                    &kp SLASH         &kp SEMICOLON     &kp FSLH    &kp ESC
+                                                      &kp ESCAPE       &lt 1 SPACE             &kp R                        &kp RET  &lt 2 SPACE              &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
